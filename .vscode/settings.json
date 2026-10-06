@@ -1,0 +1,43 @@
+{
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "editor.suggestSelection": "first",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.parameterHints.enabled": true,
+  "editor.formatOnSave": true,
+
+  // TypeScript / React Auto-Suggestions & Auto-Imports
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // C# / .NET Auto-Suggestions & Inlay Hints
+  "dotnet.completion.provideRegexCompletions": true,
+
+  // Auto Close & Rename Tags for JSX / TSX
+  "auto-close-tag.enableAutoCloseTag": true,
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true
+}

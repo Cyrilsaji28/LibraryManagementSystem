@@ -1,0 +1,544 @@
+{
+  "languages": [
+    {
+      "name": "English"
+    },
+    {
+      "name": "Spanish"
+    },
+    {
+      "name": "French"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Programming"
+    },
+    {
+      "name": "Software Engineering"
+    },
+    {
+      "name": "Database"
+    },
+    {
+      "name": "Personal Development"
+    },
+    {
+      "name": "Fiction"
+    },
+    {
+      "name": "History"
+    },
+    {
+      "name": "Science"
+    },
+    {
+      "name": "Fantasy"
+    }
+  ],
+  "authors": [
+    {
+      "firstName": "Robert C.",
+      "lastName": "Martin",
+      "biography": "American software engineer and author known for his work on software craftsmanship and clean code."
+    },
+    {
+      "firstName": "Martin",
+      "lastName": "Fowler",
+      "biography": "British software developer and author known for his work on software architecture and refactoring."
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "Hunt",
+      "biography": "American software developer and co-author of The Pragmatic Programmer."
+    },
+    {
+      "firstName": "David",
+      "lastName": "Thomas",
+      "biography": "American programmer and co-author of The Pragmatic Programmer."
+    },
+    {
+      "firstName": "James",
+      "lastName": "Clear",
+      "biography": "Author and speaker focused on habits, decision making, and continuous improvement."
+    },
+    {
+      "firstName": "Cal",
+      "lastName": "Newport",
+      "biography": "Author and computer science professor known for his work on productivity and focused work."
+    },
+    {
+      "firstName": "J.R.R.",
+      "lastName": "Tolkien",
+      "biography": "English writer, philologist, and author best known for The Hobbit and The Lord of the Rings."
+    },
+    {
+      "firstName": "Yuval Noah",
+      "lastName": "Harari",
+      "biography": "Israeli historian and author known for books exploring human history and civilization."
+    },
+    {
+      "firstName": "Antoine",
+      "lastName": "de Saint-Exupéry",
+      "biography": "French writer and aviator best known for The Little Prince."
+    },
+    {
+      "firstName": "Gabriel",
+      "lastName": "García Márquez",
+      "biography": "Colombian novelist and Nobel Prize winner known for One Hundred Years of Solitude."
+    }
+  ],
+  "books": [
+    {
+      "title": "Clean Code",
+      "subtitle": "A Handbook of Agile Software Craftsmanship",
+      "isbn10": "0132350882",
+      "isbn13": "9780132350884",
+      "edition": "1st Edition",
+      "publicationYear": 2008,
+      "language": "English",
+      "summary": "A practical guide to writing clean, readable, maintainable, and high-quality software.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg",
+      "authors": [
+        "Robert C. Martin"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "Clean Architecture",
+      "subtitle": "A Craftsman's Guide to Software Structure and Design",
+      "isbn10": "0134494164",
+      "isbn13": "9780134494166",
+      "edition": "1st Edition",
+      "publicationYear": 2017,
+      "language": "English",
+      "summary": "A guide to designing software systems that remain flexible, maintainable, and independent of frameworks.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780134494166-L.jpg",
+      "authors": [
+        "Robert C. Martin"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "Refactoring",
+      "subtitle": "Improving the Design of Existing Code",
+      "isbn10": "0134757599",
+      "isbn13": "9780134757599",
+      "edition": "2nd Edition",
+      "publicationYear": 2018,
+      "language": "English",
+      "summary": "A comprehensive guide to improving existing software design through systematic refactoring techniques.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg",
+      "authors": [
+        "Martin Fowler"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "subtitle": "Your Journey to Mastery",
+      "isbn10": "0135957052",
+      "isbn13": "9780135957059",
+      "edition": "2nd Edition",
+      "publicationYear": 2019,
+      "language": "English",
+      "summary": "A collection of practical principles and techniques for becoming a better and more effective software developer.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780135957059-L.jpg",
+      "authors": [
+        "Andrew Hunt",
+        "David Thomas"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "Design Patterns",
+      "subtitle": "Elements of Reusable Object-Oriented Software",
+      "isbn10": "0201633612",
+      "isbn13": "9780201633610",
+      "edition": "1st Edition",
+      "publicationYear": 1994,
+      "language": "English",
+      "summary": "A classic reference explaining reusable object-oriented software design patterns.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg",
+      "authors": [
+        "Martin Fowler"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "Atomic Habits",
+      "subtitle": "An Easy and Proven Way to Build Good Habits",
+      "isbn10": "0735211299",
+      "isbn13": "9780735211292",
+      "edition": "1st Edition",
+      "publicationYear": 2018,
+      "language": "English",
+      "summary": "A practical framework for building good habits and breaking bad ones through small, consistent improvements.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
+      "authors": [
+        "James Clear"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "Deep Work",
+      "subtitle": "Rules for Focused Success in a Distracted World",
+      "isbn10": "1455586692",
+      "isbn13": "9781455586691",
+      "edition": "1st Edition",
+      "publicationYear": 2016,
+      "language": "English",
+      "summary": "A guide to developing the ability to focus without distraction and produce valuable work.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg",
+      "authors": [
+        "Cal Newport"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "The Hobbit",
+      "subtitle": "There and Back Again",
+      "isbn10": "054792822X",
+      "isbn13": "9780547928227",
+      "edition": "Enhanced Edition",
+      "publicationYear": 2012,
+      "language": "English",
+      "summary": "A fantasy adventure following Bilbo Baggins on an unexpected journey through Middle-earth.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "Sapiens",
+      "subtitle": "A Brief History of Humankind",
+      "isbn10": "0062316095",
+      "isbn13": "9780062316097",
+      "edition": "1st Edition",
+      "publicationYear": 2015,
+      "language": "English",
+      "summary": "An exploration of the history of humanity from early hunter-gatherers to the modern world.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "category": "History"
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "subtitle": "A Multigenerational Story of Family and Memory",
+      "isbn10": "0060883286",
+      "isbn13": "9780060883287",
+      "edition": "1st Edition",
+      "publicationYear": 1967,
+      "language": "English",
+      "summary": "A celebrated novel following several generations of a family and their extraordinary experiences in a fictional town.",
+      "coverImageUrl": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+      "authors": [
+        "Gabriel García Márquez"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "The Art of Software Design",
+      "subtitle": "Building Better Applications",
+      "isbn10": "1000000001",
+      "isbn13": "9781000000001",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "Spanish",
+      "summary": "An introduction to software design principles and practical techniques for building maintainable applications.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+      "authors": [
+        "Robert C. Martin"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "Modern Programming Practices",
+      "subtitle": "Writing Reliable and Maintainable Code",
+      "isbn10": "1000000002",
+      "isbn13": "9781000000002",
+      "edition": "1st Edition",
+      "publicationYear": 2021,
+      "language": "Spanish",
+      "summary": "A practical introduction to professional programming practices and techniques for creating reliable software.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      "authors": [
+        "Martin Fowler"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "The Developer's Journey",
+      "subtitle": "Growing From Beginner to Professional",
+      "isbn10": "1000000003",
+      "isbn13": "9781000000003",
+      "edition": "1st Edition",
+      "publicationYear": 2022,
+      "language": "Spanish",
+      "summary": "A guide to developing the technical and professional skills needed to become a successful software developer.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "authors": [
+        "Andrew Hunt"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "Practical Software Engineering",
+      "subtitle": "Principles for Building Quality Systems",
+      "isbn10": "1000000004",
+      "isbn13": "9781000000004",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "Spanish",
+      "summary": "An overview of software engineering principles for designing, developing, testing, and maintaining quality systems.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1558655146-d09347e92766",
+      "authors": [
+        "David Thomas"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "Building Better Habits",
+      "subtitle": "Small Changes for Lasting Improvement",
+      "isbn10": "1000000005",
+      "isbn13": "9781000000005",
+      "edition": "1st Edition",
+      "publicationYear": 2021,
+      "language": "Spanish",
+      "summary": "A practical exploration of how small daily actions can create meaningful and lasting personal improvements.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authors": [
+        "James Clear"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "The Power of Focus",
+      "subtitle": "Doing Meaningful Work in a Distracted World",
+      "isbn10": "1000000006",
+      "isbn13": "9781000000006",
+      "edition": "1st Edition",
+      "publicationYear": 2022,
+      "language": "Spanish",
+      "summary": "A guide to improving concentration and productivity by developing focused and deliberate working habits.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authors": [
+        "Cal Newport"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "The World of Middle-earth",
+      "subtitle": "Stories of Adventure and Imagination",
+      "isbn10": "1000000007",
+      "isbn13": "9781000000007",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "Spanish",
+      "summary": "An exploration of fantasy storytelling, legendary characters, and imaginary worlds filled with adventure.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "Understanding Human History",
+      "subtitle": "The Story of Civilization",
+      "isbn10": "1000000008",
+      "isbn13": "9781000000008",
+      "edition": "1st Edition",
+      "publicationYear": 2021,
+      "language": "Spanish",
+      "summary": "An accessible exploration of the major developments that shaped human societies and civilizations.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1461360228754-6e81c478b882",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "category": "History"
+    },
+    {
+      "title": "The Magical World",
+      "subtitle": "A Story of Memory and Imagination",
+      "isbn10": "1000000009",
+      "isbn13": "9781000000009",
+      "edition": "1st Edition",
+      "publicationYear": 2019,
+      "language": "Spanish",
+      "summary": "A fictional story exploring family, memory, imagination, and the extraordinary events that shape everyday life.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      "authors": [
+        "Gabriel García Márquez"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "The Little Traveler",
+      "subtitle": "A Story About Friendship and Responsibility",
+      "isbn10": "1000000010",
+      "isbn13": "9781000000010",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "Spanish",
+      "summary": "A thoughtful story about friendship, responsibility, relationships, and the importance of seeing beyond appearances.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+      "authors": [
+        "Antoine de Saint-Exupéry"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "Software Architecture Fundamentals",
+      "subtitle": "Designing Systems That Last",
+      "isbn10": "1000000011",
+      "isbn13": "9781000000011",
+      "edition": "1st Edition",
+      "publicationYear": 2023,
+      "language": "French",
+      "summary": "An introduction to software architecture concepts and principles for creating flexible and maintainable systems.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1558655146-d09347e92766",
+      "authors": [
+        "Robert C. Martin"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "Refactoring Modern Applications",
+      "subtitle": "Improving Existing Software Design",
+      "isbn10": "1000000012",
+      "isbn13": "9781000000012",
+      "edition": "1st Edition",
+      "publicationYear": 2022,
+      "language": "French",
+      "summary": "A practical guide to improving existing applications through systematic changes to software structure and design.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+      "authors": [
+        "Martin Fowler"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "The Programmer's Handbook",
+      "subtitle": "Practical Techniques for Better Code",
+      "isbn10": "1000000013",
+      "isbn13": "9781000000013",
+      "edition": "1st Edition",
+      "publicationYear": 2021,
+      "language": "French",
+      "summary": "A practical handbook covering problem solving, programming techniques, and professional software development practices.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      "authors": [
+        "Andrew Hunt"
+      ],
+      "category": "Programming"
+    },
+    {
+      "title": "Reliable Software Systems",
+      "subtitle": "Building Applications With Confidence",
+      "isbn10": "1000000014",
+      "isbn13": "9781000000014",
+      "edition": "1st Edition",
+      "publicationYear": 2023,
+      "language": "French",
+      "summary": "An introduction to principles and practices for building reliable, testable, and maintainable software systems.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      "authors": [
+        "David Thomas"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "title": "The Habit of Improvement",
+      "subtitle": "Creating a Better Life One Step at a Time",
+      "isbn10": "1000000015",
+      "isbn13": "9781000000015",
+      "edition": "1st Edition",
+      "publicationYear": 2022,
+      "language": "French",
+      "summary": "An exploration of how consistent habits and small improvements can lead to meaningful long-term personal growth.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authors": [
+        "James Clear"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "Deep Focus",
+      "subtitle": "The Skill of Concentrated Work",
+      "isbn10": "1000000016",
+      "isbn13": "9781000000016",
+      "edition": "1st Edition",
+      "publicationYear": 2021,
+      "language": "French",
+      "summary": "A guide to developing concentration and creating an environment that supports meaningful and productive work.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authors": [
+        "Cal Newport"
+      ],
+      "category": "Personal Development"
+    },
+    {
+      "title": "The Adventures of Middle-earth",
+      "subtitle": "Heroes, Journeys, and Legendary Worlds",
+      "isbn10": "1000000017",
+      "isbn13": "9781000000017",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "French",
+      "summary": "A fantasy adventure exploring heroic journeys, legendary characters, and unforgettable imaginary worlds.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+      "authors": [
+        "J.R.R. Tolkien"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "A Brief History of Civilization",
+      "subtitle": "Understanding the Human Journey",
+      "isbn10": "1000000018",
+      "isbn13": "9781000000018",
+      "edition": "1st Edition",
+      "publicationYear": 2022,
+      "language": "French",
+      "summary": "An accessible overview of human civilization and the major events that influenced the development of modern society.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1461360228754-6e81c478b882",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "category": "History"
+    },
+    {
+      "title": "A Hundred Years of Stories",
+      "subtitle": "Family, Memory, and Imagination",
+      "isbn10": "1000000019",
+      "isbn13": "9781000000019",
+      "edition": "1st Edition",
+      "publicationYear": 2020,
+      "language": "French",
+      "summary": "A fictional exploration of family relationships, memory, imagination, and the unusual events that shape generations.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      "authors": [
+        "Gabriel García Márquez"
+      ],
+      "category": "Fiction"
+    },
+    {
+      "title": "The Meaning of Friendship",
+      "subtitle": "A Story About Connection and Responsibility",
+      "isbn10": "1000000020",
+      "isbn13": "9781000000020",
+      "edition": "1st Edition",
+      "publicationYear": 2019,
+      "language": "French",
+      "summary": "A thoughtful fictional story about friendship, responsibility, connection, and understanding the world from a different perspective.",
+      "coverImageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+      "authors": [
+        "Antoine de Saint-Exupéry"
+      ],
+      "category": "Fiction"
+    }
+  ]
+}

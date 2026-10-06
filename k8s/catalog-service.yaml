@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catalog-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: catalog-service
+  template:
+    metadata:
+      labels:
+        app: catalog-service
+    spec:
+      containers:
+        - name: catalog-service
+          image: microservices-catalog-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5002
+          envFrom:
+            - configMapRef:
+                name: app-config
+            - secretRef:
+                name: app-secrets
+          volumeMounts:
+            - name: catalog-logs
+              mountPath: /app/Logs
+      volumes:
+        - name: catalog-logs
+          hostPath:
+            path: /run/desktop/mnt/host/c/Users/CyrilSaji/Desktop/Microservices/services/CatalogService/Logs
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalog-service
+spec:
+  selector:
+    app: catalog-service
+  ports:
+    - port: 5002
+      targetPort: 5002

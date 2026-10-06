@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: borrowing-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: borrowing-service
+  template:
+    metadata:
+      labels:
+        app: borrowing-service
+    spec:
+      containers:
+        - name: borrowing-service
+          image: microservices-borrowing-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5003
+          envFrom:
+            - configMapRef:
+                name: app-config
+            - secretRef:
+                name: app-secrets
+          volumeMounts:
+            - name: borrowing-logs
+              mountPath: /app/Logs
+      volumes:
+        - name: borrowing-logs
+          hostPath:
+            path: /run/desktop/mnt/host/c/Users/CyrilSaji/Desktop/Microservices/services/BorrowingService/Logs
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: borrowing-service
+spec:
+  selector:
+    app: borrowing-service
+  ports:
+    - port: 5003
+      targetPort: 5003

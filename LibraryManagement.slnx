@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/services/" />
+  <Folder Name="/services/AuthService/">
+    <Project Path="services/AuthService/LibraryManagement.Services.Auth.csproj" />
+  </Folder>
+  <Folder Name="/services/CatalogService/">
+    <Project Path="services/CatalogService/LibraryManagement.Services.Catalog.csproj" />
+  </Folder>
+  <Folder Name="/services/BorrowingService/">
+    <Project Path="services/BorrowingService/LibraryManagement.Services.Borrowing.csproj" />
+  </Folder>
+  <Folder Name="/services/Gateway/">
+    <Project Path="services/Gateway/LibraryManagement.Gateway.csproj" />
+  </Folder>
+  <Folder Name="/services/Shared/">
+    <Project Path="services/Shared/LibraryManagement.Shared.csproj" />
+  </Folder>
+</Solution>

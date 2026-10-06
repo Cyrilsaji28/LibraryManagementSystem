@@ -1,0 +1,113 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: library-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: newLibMan
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - library-net
+
+  auth-service:
+    build:
+      context: .
+      dockerfile: services/AuthService/Dockerfile
+    container_name: library-auth-service
+    restart: always
+    environment:
+      - TZ=Asia/Kolkata
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=newLibMan;Username=postgres;Password=password
+      - Jwt__Key=tyytytfyufytftftf6556fytfycvycyt
+      - Jwt__Issuer=LibraryManagement.API
+      - Jwt__Audience=LibraryManagement.Client
+    ports:
+      - "5001:5001"
+    depends_on:
+      - postgres
+    networks:
+      - library-net
+    volumes:
+      - ./services/AuthService/Logs:/app/Logs
+
+  catalog-service:
+    build:
+      context: .
+      dockerfile: services/CatalogService/Dockerfile
+    container_name: library-catalog-service
+    restart: always
+    environment:
+      - TZ=Asia/Kolkata
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=newLibMan;Username=postgres;Password=password
+      - Jwt__Key=tyytytfyufytftftf6556fytfycvycyt
+      - Jwt__Issuer=LibraryManagement.API
+      - Jwt__Audience=LibraryManagement.Client
+    ports:
+      - "5002:5002"
+    depends_on:
+      - postgres
+    networks:
+      - library-net
+    volumes:
+      - ./services/CatalogService/Logs:/app/Logs
+
+  borrowing-service:
+    build:
+      context: .
+      dockerfile: services/BorrowingService/Dockerfile
+    container_name: library-borrowing-service
+    restart: always
+    environment:
+      - TZ=Asia/Kolkata
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=newLibMan;Username=postgres;Password=password
+      - Jwt__Key=tyytytfyufytftftf6556fytfycvycyt
+      - Jwt__Issuer=LibraryManagement.API
+      - Jwt__Audience=LibraryManagement.Client
+    ports:
+      - "5003:5003"
+    depends_on:
+      - postgres
+    networks:
+      - library-net
+    volumes:
+      - ./services/BorrowingService/Logs:/app/Logs
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: services/Gateway/Dockerfile
+    container_name: library-api-gateway
+    restart: always
+    environment:
+      - TZ=Asia/Kolkata
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ReverseProxy__Clusters__auth-cluster__Destinations__auth-destination__Address=http://auth-service:5001
+      - ReverseProxy__Clusters__catalog-cluster__Destinations__catalog-destination__Address=http://catalog-service:5002
+      - ReverseProxy__Clusters__borrowing-cluster__Destinations__borrowing-destination__Address=http://borrowing-service:5003
+    ports:
+      - "5281:5281"
+    depends_on:
+      - auth-service
+      - catalog-service
+      - borrowing-service
+    networks:
+      - library-net
+    volumes:
+      - ./services/Gateway/Logs:/app/Logs
+
+networks:
+  library-net:
+    driver: bridge
+
+volumes:
+  postgres_data:

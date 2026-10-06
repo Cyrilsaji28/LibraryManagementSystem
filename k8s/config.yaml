@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  ASPNETCORE_ENVIRONMENT: "Development"
+  TZ: "Asia/Kolkata"
+  ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=newLibMan;Username=postgres;Password=password"
+  Jwt__Issuer: "LibraryManagement.API"
+  Jwt__Audience: "LibraryManagement.Client"
+  ReverseProxy__Clusters__auth-cluster__Destinations__auth-destination__Address: "http://auth-service:5001"
+  ReverseProxy__Clusters__catalog-cluster__Destinations__catalog-destination__Address: "http://catalog-service:5002"
+  ReverseProxy__Clusters__borrowing-cluster__Destinations__borrowing-destination__Address: "http://borrowing-service:5003"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: app-secrets
+type: Opaque
+stringData:
+  Jwt__Key: "tyytytfyufytftftf6556fytfycvycyt"
+  POSTGRES_PASSWORD: "password"

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-gateway
+  template:
+    metadata:
+      labels:
+        app: api-gateway
+    spec:
+      containers:
+        - name: api-gateway
+          image: microservices-api-gateway:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5281
+          envFrom:
+            - configMapRef:
+                name: app-config
+            - secretRef:
+                name: app-secrets
+          volumeMounts:
+            - name: gateway-logs
+              mountPath: /app/Logs
+      volumes:
+        - name: gateway-logs
+          hostPath:
+            path: /run/desktop/mnt/host/c/Users/CyrilSaji/Desktop/Microservices/services/Gateway/Logs
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-gateway
+spec:
+  type: LoadBalancer
+  selector:
+    app: api-gateway
+  ports:
+    - port: 5281
+      targetPort: 5281
